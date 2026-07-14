@@ -337,7 +337,7 @@ export function SettingsPage() {
 
                 <div className="mt-5 p-4 bg-[#f9fafb] rounded-[12px] border border-[#e8e8e8]">
                   <p className="text-[#5d5d5d] text-[13px]">
-                    <span className="font-medium text-[#383838]">Tip:</span> You can subscribe to multiple CRM types and switch between them instantly. Only one CRM is active at a time — switching is free and doesn't create a new charge.
+                    <span className="font-medium text-[#383838]">Tip:</span> You can subscribe to multiple CRM types and switch between them instantly. Only one CRM is active at a time, and switching is free and doesn't create a new charge.
                   </p>
                 </div>
               </>

@@ -497,7 +497,7 @@ export function CrmSignup() {
               {/* DEV: Show verification code for testing */}
               {!isVerified && generatedCode && (
                 <div className="mx-auto mb-6 px-4 py-2.5 rounded-[10px] bg-[#fffbe6] border border-[#ffe58f] max-w-fit">
-                  <p className="text-[#ad6800] text-[12px] font-medium mb-0.5">🔑 Dev Mode — Your verification code:</p>
+                  <p className="text-[#ad6800] text-[12px] font-medium mb-0.5">🔑 Dev Mode: Your verification code</p>
                   <p className="text-[#ad6800] text-[22px] font-bold tracking-[6px] text-center">{generatedCode}</p>
                 </div>
               )}
@@ -623,11 +623,11 @@ export function CrmSignup() {
                     )}
                     <div className="flex justify-between text-[14px]">
                       <span className="text-[#9a9a9a]">Name</span>
-                      <span className="text-[#383838] font-medium">{formData.name || "—"}</span>
+                      <span className="text-[#383838] font-medium">{formData.name || "Not provided"}</span>
                     </div>
                     <div className="flex justify-between text-[14px]">
                       <span className="text-[#9a9a9a]">Email</span>
-                      <span className="text-[#383838] font-medium">{formData.email || "—"}</span>
+                      <span className="text-[#383838] font-medium">{formData.email || "Not provided"}</span>
                     </div>
                   </div>
                 </div>
@@ -680,7 +680,7 @@ export function CrmSignup() {
       </div>
 
       {/* Right - Image Panel */}
-      <div className="hidden lg:block lg:w-[40%] relative">
+      <div className="hidden md:block md:w-[35%] lg:w-[40%] relative">
         <img src={imgFlower} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ backgroundColor: `${selectedCrmConfig.color}55` }} />
         <div className="absolute bottom-12 left-10 right-10">

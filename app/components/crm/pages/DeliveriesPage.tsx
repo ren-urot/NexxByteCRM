@@ -354,7 +354,7 @@ export function DeliveriesPage() {
       {totalPages > 1 && (
         <div className="flex items-center justify-between mt-4">
           <p className="text-[12px] text-[#9a9a9a]">
-            Showing {(page - 1) * ROWS_PER_PAGE + 1}–{Math.min(page * ROWS_PER_PAGE, filtered.length)} of {filtered.length}
+            Showing {(page - 1) * ROWS_PER_PAGE + 1} to {Math.min(page * ROWS_PER_PAGE, filtered.length)} of {filtered.length}
           </p>
           <div className="flex items-center gap-1.5">
             <button
@@ -463,7 +463,7 @@ function TrackDrawer({
             </div>
             <div className="flex items-center gap-2.5">
               <Phone size={15} className="shrink-0" style={{ color }} />
-              <p className="text-[#5d5d5d] text-[13px]">{delivery.phone || "—"}</p>
+              <p className="text-[#5d5d5d] text-[13px]">{delivery.phone || "Not provided"}</p>
             </div>
             <div className="flex items-center gap-2.5">
               <Clock size={15} className="shrink-0" style={{ color }} />

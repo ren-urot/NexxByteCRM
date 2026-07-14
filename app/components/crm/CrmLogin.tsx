@@ -49,14 +49,14 @@ function CrmLoginInner() {
   return (
     <div className="flex min-h-screen font-['Inter',sans-serif]">
       {/* Left - Image Panel */}
-      <div className="hidden lg:block lg:w-[45%] relative">
+      <div className="hidden md:block md:w-[40%] lg:w-[45%] relative">
         <img src={crmConfig?.image || imgFlower} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ backgroundColor: crmConfig ? `${crmConfig.color}66` : "rgba(255,78,0,0.4)" }} />
         <div className="absolute bottom-10 left-10 right-10">
           <p className="text-white/90 text-center text-[16px] leading-[24px]">
             {crmConfig
               ? `Manage your ${crmConfig.customerLabelPlural.toLowerCase()}, track ${crmConfig.saleLabel.toLowerCase()}s, and grow your business with ${crmConfig.name}.`
-              : "Manage your business with ease. Track sales, customers, leads, and more — all in one place."}
+              : "Manage your business with ease. Track sales, customers, leads, and more, all in one place."}
           </p>
         </div>
       </div>

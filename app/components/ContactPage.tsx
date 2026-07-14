@@ -7,7 +7,7 @@ const contactInfo = [
   { icon: MapPin, title: "Our Office", lines: ["123 Tech Avenue, Suite 200", "San Francisco, CA 94105"] },
   { icon: Phone, title: "Phone", lines: ["+1 (800) 123-4567", "+1 (800) 123-4568"] },
   { icon: Mail, title: "Email", lines: ["info@crmplatform.com", "support@crmplatform.com"] },
-  { icon: Clock, title: "Business Hours", lines: ["Mon - Fri: 9:00 AM - 6:00 PM", "Sat - Sun: Closed"] },
+  { icon: Clock, title: "Business Hours", lines: ["Mon to Fri: 9:00 AM to 6:00 PM", "Sat to Sun: Closed"] },
 ];
 
 export function ContactPage() {

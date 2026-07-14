@@ -214,7 +214,7 @@ export function CustomersPage() {
                   </td>
                   <td className="px-5 py-3.5 text-[13px] text-[#5d5d5d] whitespace-nowrap">{c.company}</td>
                   {config.extraFields.map((f) => (
-                    <td key={f} className="px-5 py-3.5 text-[13px] text-[#5d5d5d] hidden lg:table-cell whitespace-nowrap">{c.extra[f] || "—"}</td>
+                    <td key={f} className="px-5 py-3.5 text-[13px] text-[#5d5d5d] hidden lg:table-cell whitespace-nowrap">{c.extra[f] || "N/A"}</td>
                   ))}
                   <td className="px-5 py-3.5 whitespace-nowrap">
                     <span className={`px-2.5 py-1 rounded-full text-[12px] font-medium ${c.status === "Active" ? "bg-[#e6f9e6] text-[#1a8a1a]" : "bg-[#f0f0f0] text-[#666]"}`}>{c.status}</span>
@@ -235,7 +235,7 @@ export function CustomersPage() {
         {totalPages > 1 && (
           <div className="flex items-center justify-between px-5 py-3 border-t border-[#e8e8e8]">
             <p className="text-[13px] text-[#9a9a9a]">
-              Showing {(safeCurrentPage - 1) * ROWS_PER_PAGE + 1}–{Math.min(safeCurrentPage * ROWS_PER_PAGE, filtered.length)} of {filtered.length}
+              Showing {(safeCurrentPage - 1) * ROWS_PER_PAGE + 1} to {Math.min(safeCurrentPage * ROWS_PER_PAGE, filtered.length)} of {filtered.length}
             </p>
             <div className="flex items-center gap-1">
               <button

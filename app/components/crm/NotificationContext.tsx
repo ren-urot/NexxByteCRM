@@ -59,7 +59,7 @@ function generateNotifications(crmType: CrmType): Notification[] {
       { id: "f5", title: "Client Meeting Reminder", message: "Meeting with Ana Lim scheduled tomorrow at 2:00 PM for portfolio review.", type: "info", read: true, timestamp: daysAgo(1) },
     ],
     realestate: [
-      { id: "r1", title: "New Property Inquiry", message: "Carlos Tan is interested in Lot 24, Phase 3 — Greenfield Estates (P4.2M).", type: "info", read: false, timestamp: minutesAgo(8) },
+      { id: "r1", title: "New Property Inquiry", message: "Carlos Tan is interested in Lot 24, Phase 3, Greenfield Estates (P4.2M).", type: "info", read: false, timestamp: minutesAgo(8) },
       { id: "r2", title: "Viewing Scheduled", message: "Site viewing for Unit 12B, Azure Tower confirmed for Mar 16 at 10:00 AM.", type: "success", read: false, timestamp: minutesAgo(35) },
       { id: "r3", title: "Contract Expiring", message: "Lease agreement for Tenant Reyes at Unit 5A expires in 5 days. Send renewal.", type: "warning", read: false, timestamp: hoursAgo(2) },
       { id: "r4", title: "Commission Released", message: "Your commission of P185,000 for Lot 18 sale has been approved for payout.", type: "success", read: true, timestamp: hoursAgo(8) },
@@ -67,7 +67,7 @@ function generateNotifications(crmType: CrmType): Notification[] {
     ],
     retail: [
       { id: "rt1", title: "Low Stock Alert", message: "Smart Watch (SKU: SKU106) is down to 7 units. Consider restocking soon.", type: "warning", read: false, timestamp: minutesAgo(15) },
-      { id: "rt2", title: "New Order Completed", message: "POS Transaction #TXN-4821 completed — P8,498 via GCash. 3 items sold.", type: "success", read: false, timestamp: minutesAgo(42) },
+      { id: "rt2", title: "New Order Completed", message: "POS Transaction #TXN-4821 completed: P8,498 via GCash. 3 items sold.", type: "success", read: false, timestamp: minutesAgo(42) },
       { id: "rt3", title: "Out of Stock", message: "Designer Sunglasses (SKU: SKU105) is now out of stock. 2 customers inquired today.", type: "error", read: false, timestamp: hoursAgo(1) },
       { id: "rt4", title: "Delivery Update", message: "Order #DEL-2089 has been delivered to customer Elena Ramos successfully.", type: "success", read: true, timestamp: hoursAgo(5) },
       { id: "rt5", title: "Daily Sales Summary", message: "Yesterday's total: P24,350 across 18 transactions. Top item: Wireless Headphones.", type: "info", read: true, timestamp: daysAgo(1) },
@@ -81,7 +81,7 @@ function generateNotifications(crmType: CrmType): Notification[] {
     ],
     flowershop: [
       { id: "fl1", title: "Low Stock Alert", message: "Pink Tulip Bouquet (SKU: SKU008) is down to 5 stems. Reorder recommended.", type: "warning", read: false, timestamp: minutesAgo(10) },
-      { id: "fl2", title: "New Order", message: "Walk-in order #POS-3241 completed — P3,500 (Red Rose Bouquet x2, Gift Wrap). Paid via Cash.", type: "success", read: false, timestamp: minutesAgo(30) },
+      { id: "fl2", title: "New Order", message: "Walk-in order #POS-3241 completed: P3,500 (Red Rose Bouquet x2, Gift Wrap). Paid via Cash.", type: "success", read: false, timestamp: minutesAgo(30) },
       { id: "fl3", title: "Delivery Failed", message: "Order #DEL-1078 to Julia Santos could not be delivered. Address not found.", type: "error", read: false, timestamp: hoursAgo(1) },
       { id: "fl4", title: "Arrangement Request", message: "Custom wedding arrangement request from client Reyes for Mar 22. Budget: P15,000.", type: "info", read: true, timestamp: hoursAgo(4) },
       { id: "fl5", title: "Supplier Update", message: "Fresh rose shipment arriving tomorrow at 7:00 AM. 200 stems (red, pink, white).", type: "info", read: true, timestamp: daysAgo(1) },

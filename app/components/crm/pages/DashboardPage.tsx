@@ -5,7 +5,7 @@ import { Users, Target, DollarSign, Activity, Plus, ArrowUpRight, Clock } from "
 const recentActivities = [
   { action: "created", entity: "customer", name: "Maria Santos", time: "2 min ago" },
   { action: "updated", entity: "lead", name: "Juan Dela Cruz", time: "15 min ago" },
-  { action: "recorded", entity: "sale", name: "P3,500 — Rose Bouquet", time: "1 hr ago" },
+  { action: "recorded", entity: "sale", name: "P3,500: Rose Bouquet", time: "1 hr ago" },
   { action: "created", entity: "customer", name: "Ana Reyes", time: "2 hrs ago" },
   { action: "moved", entity: "lead", name: "Carlo Mendoza → Won", time: "3 hrs ago" },
   { action: "updated", entity: "customer", name: "Lisa Tan", time: "5 hrs ago" },

@@ -436,7 +436,7 @@ export function AdminUsersPage() {
         {totalPages > 1 && (
           <div className="flex items-center justify-between px-4 py-3 border-t border-[#e8e8e8]">
             <p className="text-[#9a9a9a] text-[13px]">
-              Showing {(currentPage - 1) * ROWS_PER_PAGE + 1}–{Math.min(currentPage * ROWS_PER_PAGE, filteredUsers.length)} of {filteredUsers.length} users
+              Showing {(currentPage - 1) * ROWS_PER_PAGE + 1} to {Math.min(currentPage * ROWS_PER_PAGE, filteredUsers.length)} of {filteredUsers.length} users
             </p>
             <div className="flex items-center gap-1">
               <button
