@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from "react-router";
 import { NexxByteLogo } from "./NexxByteLogo";
 import { CRM_CONFIGS, type CrmType, type PlanId, PLAN_DETAILS } from "./CrmContext";
 import { useAuth } from "./AuthContext";
-import imgFlower from "figma:asset/32a98328e7d1be62da9cde3a5c1ffcc71d2df780.png";
+const imgFlower = "https://images.unsplash.com/photo-1694620133074-44180d9bd5ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaW5rJTIwcm9zZXMlMjBmbG93ZXIlMjBib3VxdWV0JTIwc2hvcHxlbnwxfHx8fDE3NzM1NjA4NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080";
 import { Zap, Star, Crown, Check, ArrowRight, ArrowLeft, Mail, RefreshCw, ShieldCheck } from "lucide-react";
 
 const plans: { id: PlanId; name: string; icon: typeof Zap; price: string; period: string; description: string; features: string[]; popular: boolean }[] = [
