@@ -196,7 +196,7 @@ export function CrmSignup() {
       login(formData.email, formData.name);
       navigate("/crm/dashboard");
       // Force page reload to pick up new subscriptions
-      window.location.href = "/app/crm/dashboard";
+      window.location.href = `${import.meta.env.BASE_URL}crm/dashboard`;
     }
   };
 

@@ -59,12 +59,12 @@ export function SettingsPage() {
       businessName: newBusinessName || "My Business",
     });
     setShowAddModal(false);
-    window.location.href = "/app/crm/settings";
+    window.location.href = `${import.meta.env.BASE_URL}crm/settings`;
   };
 
   const handleSwitch = (subId: string) => {
     setActiveSubscription(subId);
-    window.location.href = "/app/crm/settings";
+    window.location.href = `${import.meta.env.BASE_URL}crm/settings`;
   };
 
   const handleRemove = (subId: string) => {
@@ -72,7 +72,7 @@ export function SettingsPage() {
     setConfirmRemoveId(null);
     // If we removed the active one, reload to pick up the new active
     if (subId === activeSubscription?.id) {
-      window.location.href = "/app/crm/settings";
+      window.location.href = `${import.meta.env.BASE_URL}crm/settings`;
     }
   };
 

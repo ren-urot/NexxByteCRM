@@ -88,7 +88,7 @@ function SubscriptionSwitcher({ color }: { color: string }) {
                 onClick={() => {
                   if (!isActive) {
                     setActiveSubscription(sub.id);
-                    window.location.href = "/app/crm/dashboard";
+                    window.location.href = `${import.meta.env.BASE_URL}crm/dashboard`;
                   }
                   setOpen(false);
                 }}
