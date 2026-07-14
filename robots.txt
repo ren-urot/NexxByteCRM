@@ -1,0 +1,11 @@
+# robots.txt for nexxabyte.com
+User-agent: *
+Allow: /
+Disallow: /crm/
+Disallow: /crm/login
+Disallow: /crm/signup
+Disallow: /crm/dashboard
+Disallow: /crm/settings
+
+# Sitemap
+Sitemap: https://nexxabyte.com/sitemap.xml

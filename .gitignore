@@ -1,0 +1,8 @@
+node_modules/
+node_modules.zip
+src.zip
+dist/
+assets/
+.claude/
+.playwright-mcp/
+.DS_Store
